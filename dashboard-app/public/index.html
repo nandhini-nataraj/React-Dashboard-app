@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Team Competency Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <style>
+      #chart {
+        padding: 0;
+        max-width: 180px;
+        margin: 35px auto;
+      }
+
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {
+        height: 300px
+      }
+
+      /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #f1f1f1;
+        height: 200%; 
+      }
+
+      /* On small screens, set height to 'auto' for the grid */
+      @media screen and (max-width: 767px) {
+        .row.content {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+
+<body>
+
+  
+
+  <div class="container-fluid">
+    <div class="row content">      
+      <div class="col-md-5">
+        <div class="well">
+          <div id='techCompChart'></div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="well">
+          <h5>Overall Technical Competency</h5>
+          <h4>Onsite</h4>
+          <div id='AssoCompChart1'></div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="well">
+          <h5>Overall Technical Competency</h5>
+          <h4>Offshore</h4>
+          <div id='AssoCompChart2'></div>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-sm-12">
+        <div class="well">
+          <h4>Teams</h4>
+          <div id='Teams'></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="well">
+          <h4>Team competency - Individual</h4>
+          <div id='TeamCompetencyTable'></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
